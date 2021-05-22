@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
 * {
     box-sizing: border-box;
     max-width: 97vw;
@@ -6,8 +6,8 @@
 }
 
 
-h1{
-    font-family:"Poppins", sans-serif;
+h1 {
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 36px;
     color: white;
@@ -16,9 +16,11 @@ h1{
 p {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 18px;
     color: white;
+    letter-spacing: 0.5px;
 }
+
 body {
     position: relative;
     background: url(bg-desktop.svg);
@@ -32,20 +34,22 @@ body {
 }
 
 
-header .logo{
-    position:relative;
+header .logo {
+    position: relative;
     width: 100%;
     height: 100%;
-    min-height: 300px;
-    padding-top: 5%;
+    min-height: 10em;
+    padding-top: 4%;
+    padding-bottom:6%;
+    margin:0;
     left: 4%;
 }
 
 .row {
     position: relative;
+    justify-content:flex-start;
     width: 98%;
-    padding-top:0;
-    padding-bottom: 5%;
+    margin:0;
     display: flex;
     justify-content: space-between;
 }
@@ -53,14 +57,16 @@ header .logo{
 .row .col50 {
     position: relative;
     width: 46%;
+    padding-bottom: 10%;
 }
+
 .main .row .col50 .imgBx {
     position: absolute;
     width: 100%;
     height: 100%;
     left: 4%;
-    right:0;
-    min-height:506px;
+    right: 0;
+    min-height: 506px;
 }
 
 .row .col50 .imgBx img {
@@ -70,11 +76,13 @@ header .logo{
     max-width: 100%;
     height: auto;
     object-fit: fill;
+    padding-left: 10%;
 }
 
-.row .col50 .content{
-    padding-right: 5%;
+.row .col50 .content {
+    padding-right: 15%;
     padding-left: 0;
+    padding-bottom: 5%;
 }
 
 .btn {
@@ -88,36 +96,35 @@ header .logo{
     margin-top: 20px;
     border-radius: 25px;
     box-shadow: 5px 5px 20px rgb(56 56 56);
-    text-decoration:none;
+    text-decoration: none;
 }
 
-.btn:hover {
-    background: #E882E8;
-    color: white;
-  
-}
+    .btn:hover {
+        background: #E882E8;
+        color: white;
+    }
 
-.contact{
-    position:relative;
+.contact {
+    position: relative;
     display: flex;
-    justify-content:flex-end;
-    padding-bottom:10%;
+    justify-content: flex-end;
+    padding-bottom: 10%;
     padding-right: 4%;
-    list-style-type:none;
+    list-style-type: none;
     bottom: 2%;
 }
 
-.contact a{
-    color:white;
-    display:inline-flex;
-    align-items: center;
-    justify-content:center;
-    height:50px;
-    width:50px;
-    text-decoration:none;
-}
+    .contact a {
+        color: white;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 50px;
+        text-decoration: none;
+    }
 
-.bi-facebook:hover{
+.bi-facebook:hover {
     color: #E882E8;
 }
 
@@ -162,8 +169,8 @@ header .logo{
         background-color: #6648B1;
         min-height: 100%;
         overflow: scroll;
-        overflow-x:hidden;
-        overflow-y:auto;
+        overflow-x: hidden;
+        overflow-y: auto;
     }
 
     header .logo {
@@ -180,54 +187,55 @@ header .logo{
             padding: 0.5%;
         }
 
-    
+
 
     .row {
-        display:flex;
+        display: flex;
         flex-direction: column;
         height: 98%;
-        justify-content:center;
-        align-content:center;
+        justify-content: center;
+        align-content: center;
         align-items: center;
     }
 
-        .row .col50 {
-            width: 97%;
-            max-height: 46%;
-            position: relative;
-        }
+     .row .col50 {
+         width: 97%;
+         max-height: 46%;
+         position: relative;
+     }
 
-            .row .col50 .imgBx {
-                height: 45%;
-                padding: 1%;
-            }
+     .row .col50 .imgBx {
+          height: 45%;
+          padding: 1%;
+     }
 
-                .row .col50 .imgBx img {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    max-width: 100%;
-                    height: auto;
-                    object-fit: fill;
-                  
-                }
-        .row .col50 .content {
-        justify-content: center;
-           padding:1%;
-           padding-bottom:1%;
-           margin-top:70%;
-      
-        }
-        .content{
-            display:flex;
-            flex-direction: column;
-            justify-content:center;
-            align-items:center;
-        }
-    .contact {
+     .row .col50 .imgBx img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          max-width: 100%;
+          height: auto;
+          object-fit: fill;
+          padding:1%;
+     }
+
+     .row .col50 .content {
+          justify-content: center;
+          padding: 1%;
+          padding-bottom: 1%;
+          margin-top: 70%;
+     }
+
+     .content {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .contact {
         justify-content: center;
         padding-bottom: 5%;
         list-style-type: none;
-    }
-
+     }
 }
