@@ -98,30 +98,30 @@ header .logo {
     text-decoration: none;
 }
 
-    .btn:hover {
-        background: #E882E8;
-        color: white;
-    }
+.btn:hover {
+    background: #E882E8;
+    color: white;
+ }
 
 .contact {
     position: relative;
     display: flex;
     justify-content: flex-end;
-    padding-bottom: 10%;
+    padding-bottom: 20%;
     padding-right: 4%;
     list-style-type: none;
     bottom: 2%;
 }
 
-    .contact a {
-        color: white;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        height: 50px;
-        width: 50px;
-        text-decoration: none;
-    }
+.contact a {
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    text-decoration: none;
+}
 
 .bi-facebook:hover {
     color: #E882E8;
